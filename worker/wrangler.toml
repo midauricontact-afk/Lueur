@@ -10,6 +10,7 @@ crons = ["*/5 * * * *"]
 # Stockage des abonnements (adresse push + heure + fuseau). Créé automatiquement au premier déploiement.
 [[kv_namespaces]]
 binding = "SUBS"
+id = "43bf778909c44ff7a3afa53ecef1e6f4"
 
 [vars]
 VAPID_PUBLIC_KEY = "BCD2YnLgmfu3QFECZ9bJqmfi2MpkH6RWgc5-8OUVmDLNmR7pUpF1qygWQq3CXUnY6LVAEZOavioYTUz8Y4TiGUc"
