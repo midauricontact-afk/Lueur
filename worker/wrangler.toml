@@ -1,0 +1,17 @@
+name = "lueur-push"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+workers_dev = true
+
+# Toutes les 5 minutes : envoie le rappel du soir à ceux dont l'heure est venue (offre gratuite : 5 déclencheurs max).
+[triggers]
+crons = ["*/5 * * * *"]
+
+# Stockage des abonnements (adresse push + heure + fuseau). Créé automatiquement au premier déploiement.
+[[kv_namespaces]]
+binding = "SUBS"
+
+[vars]
+VAPID_PUBLIC_KEY = "BCD2YnLgmfu3QFECZ9bJqmfi2MpkH6RWgc5-8OUVmDLNmR7pUpF1qygWQq3CXUnY6LVAEZOavioYTUz8Y4TiGUc"
+VAPID_SUBJECT = "mailto:lueur@example.com"
+ALLOWED_ORIGIN = "https://midauricontact-afk.github.io,http://localhost:5173,http://localhost:4173"

@@ -1,0 +1,14 @@
+{
+  "name": "lueur-push",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Service de rappels de Lueur (Cloudflare Worker) : envoie une notification chaque soir à l'heure choisie.",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4.147.0"
+  }
+}
